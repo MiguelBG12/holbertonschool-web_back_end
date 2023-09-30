@@ -18,6 +18,9 @@ async def async_generator() -> Generator[float, None, None]:
 
     Yields:
         float: A random float number between 0 and 10.
+
+    This asynchronous generator yields random float numbers between 0 and 10
+    with a 1-second delay between each number. It yields a total of 10 numbers.
     """
     for _ in range(10):
         yield uniform(0, 10)
