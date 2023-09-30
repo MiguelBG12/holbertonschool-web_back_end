@@ -11,6 +11,7 @@ a 1-second delay between each generation.
 
 """
 
+
 async def async_generator() -> Generator[float, None, None]:
     """
     Generate random float numbers asynchronously.
