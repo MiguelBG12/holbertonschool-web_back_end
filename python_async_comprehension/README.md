@@ -1,1 +1,1 @@
-This project is about python_async_comprehension
+This project is about Python - Async Comprehension
