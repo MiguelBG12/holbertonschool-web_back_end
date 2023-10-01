@@ -5,10 +5,8 @@ import random
 from typing import Generator
 
 
-"""This function generates random float numbers between 0 and 10 with"""
-
-
 async def async_generator() -> Generator[float, None, None]:
+    """This function generates random float numbers between 0 and 10 with"""
     for _ in range(10):
         """A 1-second delay between each generation"""
         await asyncio.sleep(1)
