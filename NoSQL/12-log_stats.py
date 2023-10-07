@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Python script to provide some stats about Nginx logs stored in MongoDB."""
+import pymongo
 from pymongo import MongoClient
 
 
