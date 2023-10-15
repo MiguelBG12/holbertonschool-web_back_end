@@ -16,4 +16,8 @@ export default class HolbertonCourse {
     this._students = students;
   }
 
+  // Getter for the 'name' property.
+  get name() {
+    return this._name;
+  }
 }
