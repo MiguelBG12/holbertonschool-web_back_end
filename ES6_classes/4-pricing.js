@@ -11,6 +11,9 @@ export default class Pricing {
     return this._amount;
   }
 
-  
+  // Setter method for 'amount'.
+  set amount(newAmount) {
+    this._amount = newAmount;
+  }
 }
   
