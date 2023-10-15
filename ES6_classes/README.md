@@ -1,1 +1,1 @@
-This project is about ES6 classes
+This project is about ES6 classes.
