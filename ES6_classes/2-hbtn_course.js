@@ -41,4 +41,9 @@ export default class HolbertonCourse {
     // Update the 'length' property with the new value.
     this._length = newLength;
   }
+
+  // Getter for the 'students' property.
+  get students() {
+    return this._students;
+  }
 }
