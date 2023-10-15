@@ -29,4 +29,8 @@ export default class HolbertonCourse {
     this._name = newName;
   }
 
+  // Getter for the 'length' property.
+  get length() {
+    return this._length;
+  }
 }
