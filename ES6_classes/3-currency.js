@@ -34,4 +34,9 @@ export default class Currency {
     if (typeof newCode !== 'string') throw TypeError('Name must be a string');
     this._code = newCode;
   }
+
+  // Added a new method to returns the attributes in the following way (name (code))
+  displayFullCurrency() {
+    return `${this._name} (${this._code})`;
+  }
 }
