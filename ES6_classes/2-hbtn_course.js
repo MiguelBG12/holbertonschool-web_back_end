@@ -20,4 +20,13 @@ export default class HolbertonCourse {
   get name() {
     return this._name;
   }
+
+  // Setter for the 'name' property.
+  set name(newName) {
+    // Check if 'newName' is a string, and if not, throw a TypeError.
+    if (typeof newName !== 'string') throw TypeError('Name must be a string');
+    // Update the 'name' property with the new value.
+    this._name = newName;
+  }
+
 }
