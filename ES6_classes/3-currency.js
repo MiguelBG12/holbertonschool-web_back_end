@@ -7,7 +7,7 @@ export default class Currency {
     if (typeof code !== 'string') throw TypeError('Code must be a string');
     // Check if 'name' is a string, and if not, throw a TypeError.
     if (typeof name !== 'string') throw TypeError('Name must be a string');
-  
+
     // Assign the 'code' and 'name' values to instance variables.
     this._code = code;
     this._name = name;
@@ -24,8 +24,8 @@ export default class Currency {
     this._name = newName;
   }
 
-   // Getter for code
-   get code() {
+  // Getter for code
+  get code() {
     return this._code;
   }
 
