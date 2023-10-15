@@ -46,4 +46,12 @@ export default class HolbertonCourse {
   get students() {
     return this._students;
   }
+
+  // Setter for the 'students' property.
+  set students(newStudents) {
+    // Check if 'newStudents' is an array, and if not, throw a TypeError.
+    if (!Array.isArray(newStudents)) throw TypeError('Students must be an array');
+    // Update the 'students' property with the new value.
+    this._students = newStudents;
+  }
 }
