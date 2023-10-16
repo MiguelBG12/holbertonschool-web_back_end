@@ -29,4 +29,10 @@ export class StudentHolberton {
     this._lastName = lastName;
     this._holbertonClass = holbertonClass;
   }
-}
+
+  // Getter for 'fullName' that returns the full name of the student.
+  get fullName() {
+    return `${this._firstName} ${this._lastName}`;
+  }
+
+
