@@ -6,3 +6,10 @@ export default class Car {
     this._motor = motor;
     this._color = color;
   }
+
+  // Method 'cloneCar' creates a new car with the same properties as the original car.
+  cloneCar() {
+    // Create a new instance of the same class using the constructor.
+    return new this.constructor(this._brand, this._motor, this._color);
+  }
+}
