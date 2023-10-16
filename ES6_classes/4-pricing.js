@@ -32,9 +32,9 @@ export default class Pricing {
     return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
 
-  // A static method 'convertPrice' calculates the converted price by multiplying 'amount' with 'conversionRate'.
+  // A static method 'convertPrice' calculates the converted price by multiplying 'amount'
+  // with 'conversionRate'.
   static convertPrice(amount, conversionRate) {
     return amount * conversionRate;
   }
 }
-  
