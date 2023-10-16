@@ -15,5 +15,11 @@ export default class Pricing {
   set amount(newAmount) {
     this._amount = newAmount;
   }
+
+  // Getter for currency
+  get currency() {
+    return this._currency;
+  }
+
 }
   
