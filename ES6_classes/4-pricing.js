@@ -26,5 +26,11 @@ export default class Pricing {
     this._currency = newCurrency;
   }
 
+  // The 'displayFullPrice' function returns a formatted string representing the price.
+  // It combines the amount, currency name, and currency code for display.
+  displayFullPrice() {
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
+  }
+
 }
   
