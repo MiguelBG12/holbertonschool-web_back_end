@@ -26,4 +26,8 @@ export default class Airport {
     this._code = newCode;
   }
 
+  // The 'toString' method returns a string representation of the Airport object.
+  toString() {
+    return `[object ${this._code}]`;
+  }
 }
