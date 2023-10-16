@@ -3,4 +3,10 @@ import Building from './5-building';
 
 // Define a 'SkyHighBuilding' class that extends the 'Building' class.
 export default class SkyHighBuilding extends Building {
+  // Constructor for 'SkyHighBuilding' that initializes 'sqft' and 'floors' properties.
+  constructor(sqft, floors) {
+    // Call the parent class constructor with the 'sqft' parameter.
+    super(sqft);
+    this._floors = floors;
+  }
 }
