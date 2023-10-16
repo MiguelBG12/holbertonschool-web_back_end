@@ -46,7 +46,7 @@ export class StudentHolberton {
   // full name, class year, and location.
   get fullStudentDescription() {
     return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${
-        this._holbertonClass.location
+      this._holbertonClass.location
     }`;
   }
 }
