@@ -1,0 +1,8 @@
+// Define an 'Airport' class representing an airport with a name and code.
+export default class Airport {
+  // Constructor that initializes the 'name' and 'code' properties.
+  constructor(name, code) {
+    this._name = name;
+    this._code = code;
+  }
+}
