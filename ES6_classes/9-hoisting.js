@@ -40,4 +40,9 @@ export class StudentHolberton {
     return this._holbertonClass;
   }
 
+  // Getter for 'fullStudentDescription' that returns a string describing the student's full name, class year, and location.
+  get fullStudentDescription() {
+    return `${this._firstName} ${this._lastName} - ${this._holbertonClass.year} - ${this._holbertonClass.location}`;
+  }
+
 
