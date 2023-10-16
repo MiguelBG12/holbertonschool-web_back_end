@@ -35,4 +35,9 @@ export class StudentHolberton {
     return `${this._firstName} ${this._lastName}`;
   }
 
+  // Getter for 'holbertonClass' that returns the associated Holberton class.
+  get holbertonClass() {
+    return this._holbertonClass;
+  }
+
 
