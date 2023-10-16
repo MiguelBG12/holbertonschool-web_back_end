@@ -21,5 +21,10 @@ export default class Pricing {
     return this._currency;
   }
 
+  // Settter for currency
+  set currency(newCurrency) {
+    this._currency = newCurrency;
+  }
+
 }
   
