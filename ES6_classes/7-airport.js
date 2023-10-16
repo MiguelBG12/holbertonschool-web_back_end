@@ -5,4 +5,11 @@ export default class Airport {
     this._name = name;
     this._code = code;
   }
+
+  // Getter method for 'name'.
+  get name() {
+    return this._name;
+  }
+
+  
 }
