@@ -14,4 +14,8 @@ export default class Building {
     return this._sqft;
   }
 
+  // Setter for sqft
+  set sqft(newSqft) {
+    this._sqft = newSqft;
+  }
 }
