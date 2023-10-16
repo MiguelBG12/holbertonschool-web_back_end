@@ -15,6 +15,8 @@ export class HolbertonClass {
   get location() {
     return this._location;
   }
-
-  
 }
+
+// Create instances of 'HolbertonClass' for different years and locations.
+const class2019 = new HolbertonClass(2019, 'San Francisco');
+const class2020 = new HolbertonClass(2020, 'San Francisco');
