@@ -11,5 +11,10 @@ export default class Airport {
     return this._name;
   }
 
+  // Setter for name
+  set name(newName) {
+    this._name = newName;
+  }
+
   
 }
