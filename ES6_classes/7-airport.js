@@ -16,5 +16,10 @@ export default class Airport {
     this._name = newName;
   }
 
+  // Getter for code
+  get code() {
+    return this._code;
+  }
+
   
 }
