@@ -6,5 +6,10 @@ export default class HolbertonClass {
     this._location = location;
   }
 
+  // The 'valueOf' method returns the 'size' property when the object is coerced to a primitive value.
+  valueOf() {
+    return this._size;
+  }
+
   
 }
