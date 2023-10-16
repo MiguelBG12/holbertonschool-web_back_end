@@ -11,5 +11,8 @@ export default class HolbertonClass {
     return this._size;
   }
 
-  
+  // The 'toString' method returns the 'location' property when the object is converted to a string.
+  toString() {
+    return this._location;
+  }
 }
