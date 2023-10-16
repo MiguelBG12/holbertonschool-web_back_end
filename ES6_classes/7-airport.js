@@ -21,5 +21,9 @@ export default class Airport {
     return this._code;
   }
 
-  
+  // Setter for code
+  set code(newCode) {
+    this._code = newCode;
+  }
+
 }
