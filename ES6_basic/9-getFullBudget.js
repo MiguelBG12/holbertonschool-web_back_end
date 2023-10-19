@@ -1,5 +1,5 @@
 // Import the getBudgetObject function from another module.
-import getBudgetObject from './7-getBudgetObject.js';
+import getBudgetObject from './7-getBudgetObject';
 
 // Define a function to create a full budget object with ES6 method properties.
 export default function getFullBudgetObject(income, gdp, capita) {
