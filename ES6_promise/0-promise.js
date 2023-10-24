@@ -6,4 +6,6 @@ function getResponseFromAPI() {
       // Then, if the operation is successful, call resolve with the result.
       // If an error occurs, call reject with the error.
     });
-} 
+}
+ 
+export default getResponseFromAPI; // Export the function
