@@ -1,10 +1,19 @@
 // Define a function called getResponseFromAPI
 function getResponseFromAPI() {
-  // Within this function, we will create and return a Promise.
+  // Create and return a new Promise
   return new Promise((resolve, reject) => {
-    // Here, you can perform some asynchronous operation, such as making an API request.
-    // Then, if the operation is successful, call resolve with the result.
-    // If an error occurs, call reject with the error.
+    // Simulate an asynchronous operation, like an API request
+    setTimeout(() => {
+      const success = true; // Simulate the success of the operation
+
+      if (success) {
+        // If the operation is successful, call resolve with some value
+        resolve('Successful operation');
+      } else {
+        // If there is an error, call reject with an error object
+        reject(new Error('There was an error in the operation'));
+      }
+    }, 2000); // Simulate a 2-second delay
   });
 }
 
