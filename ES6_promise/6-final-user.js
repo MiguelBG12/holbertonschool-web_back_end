@@ -14,10 +14,10 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
 
   // Wait for both promises to settle and process the results.
   return Promise.allSettled([userPromise, photoPromise])
-    .then((results) => results.map((result) => ({
+    .then((results) => results.map((result) => [{
       // Store the status of the promise (fulfilled or rejected).
       status: result.status,
       // Store the value or reason of the promise.
       value: (result.status === 'fulfilled') ? result.value : result.reason,
-    })));
+    }]));
 }
