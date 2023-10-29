@@ -1,28 +1,30 @@
-// Import the signUpUser function from '4-user-promise.js'.
+// Import the 'signUpUser' and 'uploadPhoto' functions from external modules.
 import signUpUser from './4-user-promise';
-
-// Import the uploadPhoto function from '5-photo-reject.js'.
 import uploadPhoto from './5-photo-reject';
 
-// Define and export the handleProfileSignup function.
-export default function handleProfileSignup(firstName, lastName, fileName) {
-  // Create a promise for user signup.
-  const userPromise = signUpUser(firstName, lastName);
+// Define an asynchronous function 'handleProfileSignup' that takes three parameters.
+const handleProfileSignup = async (firstName, lastName, fileName) => {
+  // Create an empty array 'result' to store the outcome of the operations.
+  const result = [];
+  try {
+    // Attempt to sign up a user with the provided 'firstName' and 'lastName'.
+    const user = await signUpUser(firstName, lastName);
+    // If successful, add the user's information to 'result' as a fulfilled promise.
+    result.push({ status: 'fulfilled', value: user });
 
-  // Create a promise for photo upload.
-  const photoPromise = uploadPhoto(fileName);
+    // Upload a photo using the 'fileName'.
+    await uploadPhoto(fileName);
+  } catch (error) {
+    // If there is an error, catch it and add it to 'result' as a rejected promise
+    // with the error message.
+    result.push({
+      status: 'rejected',
+      value: error.toString(),
+    });
+  }
+  // Return the 'result' array, which contains the outcomes of the user signup and photo upload.
+  return result;
+};
 
-  // Wait for both promises to settle and process the results.
-  return Promise.allSettled(
-    [
-      userPromise,
-      photoPromise,
-    ],
-  )
-    .then((results) => results.map((result) => ({
-      // Store the status of the promise (fulfilled or rejected).
-      status: result.status,
-      // Store the value or reason of the promise.
-      value: (result.status === 'fulfilled') ? result.value : result.reason,
-    })));
-}
+// Export the 'handleProfileSignup' function as the default export of this module.
+export default handleProfileSignup;
