@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Function called add that takes two float arguments and returns the result 
+Function called add that takes two float arguments and returns the result
 of the addition
 """
 
