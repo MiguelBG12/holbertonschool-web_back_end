@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Module that defines a coroutine named measure_runtime to takes not arguments"""
+"""
+Module that defines a coroutine named measure_runtime to takes not arguments
+"""
 import asyncio
 import time
 
