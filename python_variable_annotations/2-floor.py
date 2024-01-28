@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
+#!/usr/bin/env python3
 """
-A type-annotated function floor which takes a float n as argument and
-returns the floor of the float.
+Function takes a floating point number as input, calculates and returns the
+integer part as an integer
 """
+from math import floor as math_floor
 
 
-def to_str(n: float) -> str:
-    "Function that return a string representation of float"
-    return str(n)
+def floor(n: float) -> int:
+    "Function floor return int"
+    return math_floor(n)
