@@ -1,10 +1,10 @@
-import Car from "./10-car.js";
+import Car from './10-car.js';
 
 // Defines a subclass TestCar that extends the Car class.
 class TestCar extends Car {}
 
 // Creates an instance of TestCar with the specified values.
-const tc1 = new TestCar("Nissan", "Turbo", "Pink");
+const tc1 = new TestCar('Nissan', 'Turbo', 'Pink');
 
 // Clone the TestCar instance using the cloneCar method.
 const tc2 = tc1.cloneCar();
