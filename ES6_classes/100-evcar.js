@@ -1,4 +1,4 @@
-import Car from './10-car.js';
+import Car from './10-car';
 
 // Defines a subclass TestCar that extends the Car class.
 class TestCar extends Car {}
