@@ -1,15 +1,21 @@
-// Defines a class 'Car' to represent a car with brand, motor, and color.
-export default class Car {
-  // Constructor that initializes 'brand', 'motor', and 'color' properties.
-  constructor(brand, motor, color) {
-    this._brand = brand;
-    this._motor = motor;
-    this._color = color;
-  }
+import Car from "./10-car.js";
 
-  // Method 'cloneCar' creates a new car with the same properties as the original car.
-  cloneCar() {
-    // Create a new instance of the same class using the constructor.
-    return new this.constructor(this._brand, this._motor, this._color);
-  }
-}
+// Defines a subclass TestCar that extends the Car class.
+class TestCar extends Car {}
+
+// Creates an instance of TestCar with the specified values.
+const tc1 = new TestCar("Nissan", "Turbo", "Pink");
+
+// Clone the TestCar instance using the cloneCar method.
+const tc2 = tc1.cloneCar();
+
+// Print the first instance of TestCar and check if it's an instance of TestCar.
+console.log(tc1);
+console.log(tc1 instanceof TestCar);
+
+// Print the second instance of TestCar and check if it's an instance of TestCar.
+console.log(tc2);
+console.log(tc2 instanceof TestCar);
+
+// Check if the two instances are equal (same object in memory).
+console.log(tc1 === tc2);
