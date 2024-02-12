@@ -1,21 +1,23 @@
 import Car from './10-car';
 
-// Defines a subclass TestCar that extends the Car class.
-class TestCar extends Car {}
+// Defines a subclass EVCar that extends the Car class.
+class EVCar extends Car {
+  // Constructor to initialize brand, motor, color, and range properties.
+  constructor(brand, motor, color, range) {
+    // Calls the superclass constructor with brand, motor, and color.
+    super(brand, motor, color);
+    // Initializes the range property specific to EVCar.
+    this._range = range;
+  }
 
-// Creates an instance of TestCar with the specified values.
-const tc1 = new TestCar('Nissan', 'Turbo', 'Pink');
+  // Method to create a clone of EVCar instance.
+  cloneCar() {
+    // Destructure properties for cloning.
+    const { _brand, _motor, _color } = this;
+    // Returns a new instance of Car with same properties as EVCar.
+    return new Car(_brand, _motor, _color);
+  }
+}
 
-// Clone the TestCar instance using the cloneCar method.
-const tc2 = tc1.cloneCar();
-
-// Print the first instance of TestCar and check if it's an instance of TestCar.
-console.log(tc1);
-console.log(tc1 instanceof TestCar);
-
-// Print the second instance of TestCar and check if it's an instance of TestCar.
-console.log(tc2);
-console.log(tc2 instanceof TestCar);
-
-// Check if the two instances are equal (same object in memory).
-console.log(tc1 === tc2);
+// Exports the EVCar class for use in other modules.
+export default EVCar;
